@@ -1,7 +1,6 @@
 import java.rmi.RemoteException;
 
 public interface Auction extends Remote {
-
     public Integer register(String email) throws RemoteException;
     public AuctionItem getSpec(int itemID) throws RemoteException;
     public Integer newAuction(int userID, AuctionSaleItem item) throws RemoteException;
